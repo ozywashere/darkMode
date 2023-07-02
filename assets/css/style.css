@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+:root {
+  --primary: #3a36db;
+  --secondary: #ff69b4;
+  --text: #06152b;
+  --text-disable: #06152b;
+  --white: #fff;
+  --black: #000;
+  --bg: #f1f4fa;
+  --border: #dddde8;
+
+  /* font-weight */
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+  /* border-radius */
+  --br-1: 4px;
+  --br-2: 6px;
+  --br-3: 8px;
+  --br-4: 10px;
+  --br-full: 9999px;
+  /* box-shadow */
+  --bs-1: 0px 4px 75px 0px rgba(0, 0, 0, 0.25);
+
+  /* transition */
+  --transition: all 0.3s ease-in-out;
+  --transition-2: all 0.5s ease-in-out;
+  --transition-3: all 0.7s ease-in-out;
+  --transition-4: all 0.9s ease-in-out;
+  --transition-5: all 1s ease-in-out;
+  /* spacing */
+  --spacing-1: 4px;
+  --spacing-2: 8px;
+  --spacing-3: 12px;
+  --spacing-4: 16px;
+  --spacing-5: 20px;
+  --spacing-6: 24px;
+  --spacing-7: 28px;
+  --spacing-8: 32px;
+  --spacing-9: 36px;
+  --spacing-10: 40px;
+  --spacing-11: 44px;
+  --spacing-12: 48px;
+  --spacing-13: 52px;
+  --spacing-14: 56px;
+  --spacing-15: 60px;
+  --spacing-16: 64px;
+  --spacing-17: 68px;
+  --spacing-18: 72px;
+  --spacing-19: 76px;
+  --spacing-20: 80px;
+}
+.dark-theme {
+  --primary: #605cff;
+  --secondary: #ff69b4;
+  --text: #06152b;
+  --text-disable: #06152b;
+  --white: #fff;
+  --bg: #1a202c;
+  --text-disable: #364153;
+  --border: #2c3240;
+}
+a {
+  text-decoration: none;
+  color: var(--text);
+}
+li {
+  list-style: none;
+}
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-size: 16px;
+  font-weight: var(--fw-regular);
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+}
+.container {
+  max-width: 1280px;
+  margin-inline: auto;
+  padding-inline: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.heading {
+  margin-bottom: 4rem;
+}
+
+.card {
+  padding: 54px;
+  box-shadow: var(--bs-1);
+  border-radius: var(--br-4);
+  background-color: var(--bg);
+  color: var(--text);
+}
+.card-body {
+  width: 430px;
+}
+.card-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.card-title .name {
+  font-size: 35px;
+  font-weight: var(--fw-bold);
+  color: var(--text-disable);
+}
+.card-title .role {
+  font-size: 23px;
+  font-weight: var(--fw-regular);
+  margin-bottom: var(--spacing-6);
+  color: var(--text);
+}
+.card-text {
+  font-size: 20px;
+  font-weight: var(--fw-regular);
+  color: var(--text-disable);
+}
+.card-btn {
+  margin-top: 20px;
+  border-radius: 10px;
+  padding: 6px 24px;
+  font-size: 20px;
+  font-weight: var(--fw-regular);
+  background-color: var(--primary);
+  color: var(--white);
+  border: none;
+}
+.card-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  margin: 2rem;
+}
+.card-icons .icon {
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 35px;
+}
+.card-icons .icon path {
+  fill: var(--primary);
+  background-color: var(--bg);
+  transition: var(--transition-3);
+}
+.card-icons .icon:hover path {
+  fill: var(--secondary);
+  background-color: var(--bg);
+}
